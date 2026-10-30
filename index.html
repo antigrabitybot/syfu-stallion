@@ -8,8 +8,8 @@
     <link rel="icon" href="items/luck_cell.webp" />
     <meta name="description" content="SyFuスタリオン 東京競馬場 — これはSyFuの非公式ファンアプリです。SyFu公式（運営）が提供するものではありません。" />
     <title>SyFuスタリオン 東京競馬場（SyFu非公式ファンアプリ）</title>
-    <script type="module" crossorigin src="./assets/index-DXaE-AxM.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-C38_RPAR.css">
+    <script type="module" crossorigin src="./assets/index-COWz8zZd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DhSfx3fn.css">
   </head>
   <body>
     <main id="app">
@@ -34,6 +34,7 @@
         <div id="start-hint" hidden>ゲートが開く直前にアクセル！<small>早すぎると出遅れ</small></div>
         <div id="hud-weather" aria-label="天候と馬場"></div>
         <div class="hud-buttons">
+          <button id="talk-btn" class="icon-btn talk-btn" type="button" aria-label="実況のオン/オフ" aria-pressed="true">実況</button>
           <button id="mute-btn" class="icon-btn" type="button" aria-label="音のオン/オフ">♪</button>
           <button id="pause-btn" class="icon-btn" type="button" aria-label="メニュー">II</button>
         </div>
@@ -106,9 +107,8 @@
 
       <!-- Touch controls -->
       <div id="touch" hidden>
-        <div class="touch-left">
-          <button type="button" data-touch="left" aria-label="左">◀</button>
-          <button type="button" data-touch="right" aria-label="右">▶</button>
+        <div class="touch-stick" id="touch-stick" aria-label="ハンドル（指を置いて左右にスライド）">
+          <div class="stick-base"><div class="stick-knob"></div></div>
         </div>
         <div class="touch-right">
           <button type="button" data-touch="item" class="t-item" aria-label="アイテム">ITEM</button>
