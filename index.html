@@ -6,9 +6,10 @@
     <meta name="theme-color" content="#16161a" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="items/luck_cell.webp" />
-    <title>SyFuスタリオン 東京競馬場</title>
-    <script type="module" crossorigin src="./assets/index-BkTXqpSM.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-bW0uN908.css">
+    <meta name="description" content="SyFuスタリオン 東京競馬場 — これはSyFuの非公式ファンアプリです。SyFu公式（運営）が提供するものではありません。" />
+    <title>SyFuスタリオン 東京競馬場（SyFu非公式ファンアプリ）</title>
+    <script type="module" crossorigin src="./assets/index-DXaE-AxM.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C38_RPAR.css">
   </head>
   <body>
     <main id="app">
@@ -123,6 +124,7 @@
           <h1 class="logo">
             <img src="./ui/logo.webp" width="1000" height="366" alt="SyFuスタリオン 東京競馬場" decoding="async" />
           </h1>
+          <p class="unofficial">これはSyFuの非公式ファンアプリです。</p>
           <label class="field">
             <span>なまえ</span>
             <input id="name-input" maxlength="10" autocomplete="nickname" placeholder="プレイヤー" />
@@ -181,6 +183,7 @@
       <section id="credits" class="screen" hidden>
         <div class="panel credits-panel">
           <h2>クレジット</h2>
+          <p class="unofficial">これはSyFuの非公式ファンアプリです。SyFu公式（運営）が提供・保証するものではありません。お問い合わせをSyFu公式へ送らないでください。</p>
           <ul id="credits-list"></ul>
           <div class="actions">
             <button type="button" class="btn" id="credits-close">とじる</button>
@@ -277,6 +280,7 @@
       <section id="loading" class="screen" hidden>
         <div class="panel">
           <p>東京競馬場を準備中…</p>
+          <p class="unofficial">これはSyFuの非公式ファンアプリです。</p>
           <div class="bar"><i id="load-bar"></i></div>
         </div>
       </section>
@@ -285,6 +289,7 @@
       <section id="pause" class="screen" hidden>
         <div class="panel">
           <h2>メニュー</h2>
+          <p class="unofficial">これはSyFuの非公式ファンアプリです。</p>
           <div class="actions">
             <button type="button" class="btn primary" id="resume-btn">つづける</button>
             <button type="button" class="btn" id="restart-btn">はじめから</button>
@@ -301,6 +306,7 @@
           <ol id="rank-list"></ol>
           <label class="rank-send"><input type="checkbox" id="rank-send" /> 自己ベストをランキングに送る</label>
           <p class="hint">自己ベストは、なまえと一緒に公開のNostrリレーに保存され、誰でも見られます。</p>
+          <p class="unofficial">これはSyFuの非公式ファンアプリです。ランキングはSyFu公式のものではありません。</p>
           <div class="actions">
             <button type="button" class="btn primary" id="rank-close">もどる</button>
           </div>

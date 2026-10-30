@@ -1,5 +1,8 @@
 # Credits / クレジット
 
+> **これはSyFuの非公式ファンアプリです。** SyFu公式（運営）が提供・保証するものではありません。このゲームについてSyFu公式へ問い合わせないでください。
+> This is an unofficial SyFu fan app, not made, endorsed or supported by SyFu.
+
 ## Music and sound effects / BGM・効果音
 
 
@@ -51,4 +54,5 @@ three.js, Trystero, @noble/secp256k1 (MIT). Licence texts: THIRD_PARTY_LICENSES.
 
 ## SyFu
 
-SyFu characters, items and logo are used with permission.
+これはSyFuの非公式ファンアプリです。SyFuのキャラクター・アイテム・ロゴは許可を得て使用していますが、SyFu公式（運営）による制作・保証ではありません。
+This is an unofficial fan app. SyFu characters, items and logo are used with permission; the game is not made or endorsed by SyFu.
