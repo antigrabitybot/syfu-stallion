@@ -8,8 +8,8 @@
     <link rel="icon" href="items/luck_cell.webp" />
     <meta name="description" content="SyFuスタリオン 東京競馬場 — これはSyFuの非公式ファンアプリです。SyFu公式（運営）が提供するものではありません。" />
     <title>SyFuスタリオン 東京競馬場（SyFu非公式ファンアプリ）</title>
-    <script type="module" crossorigin src="./assets/index-D2kCtLQD.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BQ3UfWWg.css">
+    <script type="module" crossorigin src="./assets/index-C2ri1lTF.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CDVnCkOA.css">
   </head>
   <body>
     <main id="app">
@@ -94,6 +94,7 @@
           <button type="button" data-cam="aerial" role="radio">俯瞰</button>
           <button type="button" data-cam="chase" role="radio">追走</button>
         </div>
+        <label class="spec-follow"><span>推しを追う</span><select id="spec-follow"></select></label>
         <div id="spec-bets"></div>
         <div id="photo-lamp" hidden>写真判定</div>
       </section>
@@ -163,6 +164,7 @@
           <div class="actions">
             <button type="button" class="btn primary" id="solo-btn">ひとりで走る <small>CPU 9台</small></button>
             <button type="button" class="btn watch" id="watch-btn">観戦モード <small>出馬表・馬券・中継</small></button>
+            <button type="button" class="btn lottery" id="lottery-btn">抽選レース <small>最大20人・勝った1頭が当選</small></button>
             <button type="button" class="btn rank" id="rank-btn">ランキング <small>最速タイム</small></button>
             <button type="button" class="btn" id="host-btn">部屋をつくる</button>
             <div class="join-row">
@@ -260,11 +262,31 @@
         </div>
       </section>
 
+      <!-- 抽選レース: entrants -->
+      <section id="lottery" class="screen" hidden>
+        <div class="panel lottery-panel">
+          <h2>抽選レース</h2>
+          <p class="hint">参加者の名前を1行に1人ずつ入れてください（最大20人）。全員が1頭ずつ走り、1着の人が当選です。枠順と各馬の調子は抽選番号で決まります。</p>
+          <textarea id="lottery-names" rows="10" spellcheck="false" placeholder="たろう&#10;はなこ&#10;みた先生&#10;…"></textarea>
+          <p class="lottery-count" id="lottery-count" role="status"></p>
+          <label class="field">
+            <span>抽選番号 <small>空欄でランダム。前回の番号を入れると同じレースを再生</small></span>
+            <input id="lottery-seed" inputmode="numeric" maxlength="9" autocomplete="off" placeholder="おまかせ" />
+          </label>
+          <div class="actions row">
+            <button type="button" class="btn primary" id="lottery-go">出走！</button>
+            <button type="button" class="btn" id="lottery-back">もどる</button>
+          </div>
+        </div>
+      </section>
+
       <!-- Payout board (確定) -->
       <section id="payout" class="screen" hidden>
         <div class="panel payout-panel">
           <div class="lamp" id="payout-lamp">確定</div>
+          <div id="lottery-win"></div>
           <ol id="payout-order"></ol>
+          <p class="hint" id="lottery-seed-note"><span id="lottery-code"></span></p>
           <table class="payout-table"><tbody id="payout-table"></tbody></table>
           <h3>あなたの馬券</h3>
           <ul id="payout-mine"></ul>
