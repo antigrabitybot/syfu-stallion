@@ -1,0 +1,47 @@
+{
+  "assets": [
+    {
+      "id": "sparse_grass",
+      "name": "Sparse Grass",
+      "author": {
+        "Amal Kumar": "All"
+      },
+      "license": "CC0-1.0",
+      "source": "https://polyhaven.com/a/sparse_grass",
+      "metadata": "https://api.polyhaven.com/files/sparse_grass"
+    },
+    {
+      "id": "grass_medium_02",
+      "name": "Grass Medium 02",
+      "author": {
+        "Rico Cilliers": "All"
+      },
+      "license": "CC0-1.0",
+      "source": "https://polyhaven.com/a/grass_medium_02",
+      "metadata": "https://api.polyhaven.com/files/grass_medium_02"
+    },
+    {
+      "id": "Grass001",
+      "name": "Grass 001",
+      "source": "https://ambientcg.com/view?id=Grass001",
+      "download": "https://ambientcg.com/get?file=Grass001_1K-JPG.zip",
+      "license": "CC0-1.0",
+      "creationMethod": "PBRProcedural (provider metadata); do not describe this material as a photogrammetry scan."
+    },
+    {
+      "id": "grass_medium_01",
+      "source": "https://polyhaven.com/a/grass_medium_01",
+      "license": "CC0-1.0"
+    },
+    {
+      "id": "Ground037",
+      "name": "Ground 037",
+      "source": "https://ambientcg.com/a/Ground037",
+      "license": "CC0-1.0",
+      "creationMethod": "PBRPhotogrammetry",
+      "uses": "Color and OpenGL normal maps for the riverbank and adjacent turf"
+    }
+  ],
+  "preparation": "ambientCG Grass001 dense ground with sparse_grass soil patches. Original grass_medium_01/02 GLTF diffuse + separate Alpha PNG merged before Blender rendering to four cutouts.",
+  "license": "https://polyhaven.com/license"
+}

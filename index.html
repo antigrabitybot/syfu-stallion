@@ -8,8 +8,8 @@
     <link rel="icon" href="items/luck_cell.webp" />
     <meta name="description" content="SyFuスタリオン 東京競馬場 — これはSyFuの非公式ファンアプリです。SyFu公式（運営）が提供するものではありません。" />
     <title>SyFuスタリオン 東京競馬場（SyFu非公式ファンアプリ）</title>
-    <script type="module" crossorigin src="./assets/index-C2ri1lTF.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CDVnCkOA.css">
+    <script type="module" crossorigin src="./assets/index-DTHsoZiw.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DVh47VCG.css">
   </head>
   <body>
     <main id="app">
@@ -163,6 +163,7 @@
           </div>
           <div class="actions">
             <button type="button" class="btn primary" id="solo-btn">ひとりで走る <small>CPU 9台</small></button>
+            <button type="button" class="btn kyoto" id="kyoto-btn">京都マラソン <small>鴨川→丸太町→平安神宮 ・分岐2か所</small></button>
             <button type="button" class="btn watch" id="watch-btn">観戦モード <small>出馬表・馬券・中継</small></button>
             <button type="button" class="btn lottery" id="lottery-btn">抽選レース <small>最大20人・勝った1頭が当選</small></button>
             <button type="button" class="btn rank" id="rank-btn">ランキング <small>最速タイム</small></button>
@@ -301,7 +302,7 @@
       <!-- Loading -->
       <section id="loading" class="screen" hidden>
         <div class="panel">
-          <p>東京競馬場を準備中…</p>
+          <p id="loading-msg">東京競馬場を準備中…</p>
           <p class="unofficial">これはSyFuの非公式ファンアプリです。</p>
           <div class="bar"><i id="load-bar"></i></div>
         </div>

@@ -1,0 +1,48 @@
+{
+  "entries": [
+    {
+      "name": "daimonji",
+      "texture": "kyoto-daimonji.png",
+      "textureLite": "kyoto-daimonji-lite.png",
+      "bearingDeg": 80,
+      "distance": 4000,
+      "width": 4700,
+      "height": 600,
+      "baseY": -140,
+      "haze": 0.16
+    },
+    {
+      "name": "hiei",
+      "texture": "kyoto-hiei.png",
+      "textureLite": "kyoto-hiei-lite.png",
+      "bearingDeg": 44,
+      "distance": 8200,
+      "width": 6800,
+      "height": 1250,
+      "baseY": -280,
+      "haze": 0.27
+    },
+    {
+      "name": "kitayama",
+      "texture": "kyoto-kitayama.png",
+      "textureLite": "kyoto-kitayama-lite.png",
+      "bearingDeg": 0,
+      "distance": 6500,
+      "width": 8500,
+      "height": 900,
+      "baseY": -160,
+      "haze": 0.21
+    },
+    {
+      "name": "nishiyama",
+      "texture": "kyoto-nishiyama.png",
+      "textureLite": "kyoto-nishiyama-lite.png",
+      "bearingDeg": 270,
+      "distance": 12500,
+      "width": 28000,
+      "height": 1900,
+      "baseY": -500,
+      "haze": 0.12
+    }
+  ]
+}

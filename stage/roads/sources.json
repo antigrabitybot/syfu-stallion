@@ -1,0 +1,40 @@
+[
+  {
+    "asset": "asphalt_01",
+    "url": "https://polyhaven.com/a/asphalt_01",
+    "authors": {
+      "Dario Barresi": "Processing ",
+      "Charlotte Baglioni": "Photography"
+    },
+    "license": "CC0 1.0",
+    "receipt": "kyoto-marathon/work/roads-2026-11-17/materials/asphalt_01-info.json"
+  },
+  {
+    "asset": "sand_01",
+    "url": "https://polyhaven.com/a/sand_01",
+    "authors": [
+      "Rob Tuytel"
+    ],
+    "license": "CC0 1.0",
+    "receipt": "tokyo-racecourse/textures/sand_01/sand_01.json"
+  },
+  {
+    "asset": "gravel_embedded_concrete",
+    "url": "https://polyhaven.com/a/gravel_embedded_concrete",
+    "authors": [
+      "Charlotte Baglioni"
+    ],
+    "license": "CC0 1.0",
+    "receipt": "tokyo-racecourse/textures/gravel_embedded_concrete/gravel_embedded_concrete.json"
+  },
+  {
+    "asset": "asphalt_02",
+    "url": "https://polyhaven.com/a/asphalt_02",
+    "authors": [
+      "Rob Tuytel"
+    ],
+    "license": "CC0 1.0",
+    "receipt": "kyoto-marathon/work/streets-2026-11-18/materials/asphalt_02-info.json",
+    "use": "Sparse weathered albedo overlay; original asphalt_01 remains the continuous base."
+  }
+]
